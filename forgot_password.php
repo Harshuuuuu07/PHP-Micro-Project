@@ -43,8 +43,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'harshtank504@gmail.com';
-        $mail->Password = 'mehn qhaw ikbu pvog';
+        $mail->Username = '';
+        $mail->Password = '';
         $mail->SMTPSecure = PHPMailer\PHPMailer\PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
@@ -62,7 +62,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         );
 
         // Email settings
-        $mail->setFrom('harshtank504@gmail.com', 'Tank Harsh');
+        $mail->setFrom('', '');
         $mail->addAddress($fetched_email);
         $mail->Subject = 'Your Original Password';
         $mail->Body = "Hello,\n\nYour original password is: $original_password\n\nPlease login and change your password if needed.";
