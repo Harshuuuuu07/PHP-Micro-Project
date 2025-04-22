@@ -41,9 +41,6 @@ CREATE TABLE `announcements` (
 -- Dumping data for table `announcements`
 --
 
-INSERT INTO `announcements` (`id`, `title`, `message`, `posted_by`, `post_date`) VALUES
-(1, 'change in time table', 'EDM Lab-2.30 to 4.30', 'teacher', '2025-04-20 10:29:18'),
-(2, 'About time table', 'dhruvraj chutiya', 'teacher', '2025-04-20 14:17:57');
 
 -- --------------------------------------------------------
 
@@ -65,10 +62,6 @@ CREATE TABLE `assignments` (
 -- Dumping data for table `assignments`
 --
 
-INSERT INTO `assignments` (`id`, `title`, `subject`, `deadline`, `file_path`, `teacher_name`, `created_at`) VALUES
-(1, 'edm', 'edm', '0000-00-00', 'Assisgnment_Teacher/EDM All chapter notes.pdf', 'teacher', '2025-04-20 04:56:26'),
-(2, 'Django Development', 'Python', '0000-00-00', 'Assisgnment_Teacher/FML_practical_3-12.pdf', 'teacher', '2025-04-20 08:47:21');
-
 -- --------------------------------------------------------
 
 --
@@ -84,10 +77,6 @@ CREATE TABLE `discussions` (
 
 --
 -- Dumping data for table `discussions`
---
-
-INSERT INTO `discussions` (`id`, `student_name`, `message`, `created_at`) VALUES
-(2, 'student', 'i need java chap 2 notes', '2025-04-20 05:06:48');
 
 -- --------------------------------------------------------
 
@@ -107,11 +96,6 @@ CREATE TABLE `grades` (
 --
 -- Dumping data for table `grades`
 --
-
-INSERT INTO `grades` (`student_name`, `subject`, `grade`, `semester`, `remarks`, `id`) VALUES
-('Tank Harsh G.', 'python', 'A', '4', '89', 1),
-('student', 'python', 'A', '4', '52', 2),
-('student', 'Python', 'A', '5', '85', 3);
 
 -- --------------------------------------------------------
 
@@ -133,10 +117,6 @@ CREATE TABLE `student` (
 -- Dumping data for table `student`
 --
 
-INSERT INTO `student` (`id`, `Name`, `Email`, `Number`, `Sem`, `Enroll`, `password`) VALUES
-(1, 'Tank Harsh G.', 'harshtank504@gmail.com', '09726973210', 4, '236400316210', 'Tank@256'),
-(2, 'student', 'student@gmail.com', '1234567890', 4, '236400316210', '123'),
-(3, 'student', 'student1@gmail.com', '1234567890', 4, '236400316210', '123');
 
 -- --------------------------------------------------------
 
@@ -160,8 +140,7 @@ CREATE TABLE `submitted_assignments` (
 -- Dumping data for table `submitted_assignments`
 --
 
-INSERT INTO `submitted_assignments` (`id`, `student_name`, `assignment_name`, `submission_date`, `file_path`, `status`, `subject`, `grade`, `remarks`) VALUES
-(1, 'Tank Harsh G.', 'chap 1', '2025-04-20 10:24:29', 'Assisgnment/EDM All chapter notes.pdf', 'graded', 'edm', 'A', '52');
+
 
 -- --------------------------------------------------------
 
@@ -182,8 +161,6 @@ CREATE TABLE `teachers` (
 -- Dumping data for table `teachers`
 --
 
-INSERT INTO `teachers` (`id`, `Name`, `Email`, `Number`, `Subject`, `password`) VALUES
-(1, 'teacher', 'teacher123@gmail.com', '', 'edm', '123');
 
 --
 -- Indexes for dumped tables
